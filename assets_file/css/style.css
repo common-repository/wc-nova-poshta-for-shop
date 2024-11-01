@@ -1,0 +1,61 @@
+#billing_warehouses_field .SumoSelect{
+	width: 100%;
+}
+#billing_warehouses_field.is-loader,#billing_city_field.is-loader{
+	position: relative;
+}
+#billing_warehouses_field.is-loader:before,#billing_city_field.is-loader:before{
+	position: absolute;
+	z-index: 9;
+	content: '';
+	right: 30px;
+	top: 40px;
+	width: 30px;
+	height: 30px;
+	background: url('../image/ajax_loader_s.gif') no-repeat;
+}
+#billing_city_field{
+	position: relative;
+}
+#billing_city.is-loader,#billing_np_city.is-loader{
+
+}
+.wrapper_city_np {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    z-index: 99;
+    top: 75px;
+    overflow: hidden;
+}
+
+.wrapper_city_np span {
+    font-size: 14px;
+    color: black;
+    text-align: left;
+    width: 100%;
+    background-color: #DFDFDF;
+    display: block;
+    height: 36px;
+    padding-left: 10px;
+    line-height: 36px;
+    border-bottom: 1px solid white;
+    /* z-index: 9999; */
+}
+.wrapper_city_np span:hover{
+	background-color: #ccc;
+	cursor: pointer;
+}
+.sumo_billing_warehouses ul li{
+    color: #666 !important;
+    padding: 0px 8px;
+}
+.SumoSelect>.CaptionCont>span{
+    line-height: 28px;
+}
+.SumoSelect>.CaptionCont{
+    height: 40px;
+}
+.SumoSelect>.CaptionCont>label>i{
+    display: none;
+}
